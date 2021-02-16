@@ -6,7 +6,8 @@
 
 Write Register ``` (0x72, 0xff) ``` Led link register 0x00 = all off, 0xff = all light when analog pins detect contact.
 Read Register ``` (0x02) ``` Holds the LED status.
-Read/Write register``` (0x00, 0x01) ``` Main Power Control register
+Read/Write register``` (0x00, 0x01) ``` Main Power Control register.
+Read Register ```(0x03) ``` Contact pin status register.
   
   ##Analog pins
  ``` (i2c0.read_u8(0x10)```
